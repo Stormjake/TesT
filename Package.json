@@ -1,20 +1,27 @@
-ar commands = [];
-
-function cmd(info, func) {
-    var data = info;
-    data.function = func;
-    if (!data.dontAddCommandList) data.dontAddCommandList = false;
-    if (!info.desc) info.desc = '';
-    if (!data.fromMe) data.fromMe = false;
-    if (!info.category) data.category = 'misc';
-    if(!info.filename) data.filename = "Not Provided";
-    commands.push(data);
-    return data;
+{
+  "name": "PAIN",
+  "version": "1.0.0",
+  "description": "A WhatsApp bot created using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name pain",
+    "stop": "pm2 stop ALIEN-X",
+    "restart": "pm2 restart ALIEN-X"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.6.0",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "pino": "^7.0.5",
+    "pm2": "^5.2.0",
+    "util": "^0.12.4",
+    "express": "latest",
+    "axios": "^1.2.5",
+    "file_size_url": "^1.0.4",
+    "fs-extra": "^11.1.0",
+    "path": "^0.12.7",
+    "node-fetch": "^2.6.1",
+    "megajs": "^1.1.0",
+    "vm": "^0.1.0",
+    "qrcode-terminal": "^0.12.0"
+  }
 }
-module.exports = {
-    cmd,
-    AddCommand:cmd,
-    Function:cmd,
-    Module:cmd,
-    commands,
-};
