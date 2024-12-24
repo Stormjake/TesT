@@ -1,5 +1,5 @@
-//bot created By KPCODER-X
-//AKA PAIN👑 
+//bot created By mxgamecoder
+//THE KING THEIF👑 
 //VORTEX-MD Brain 🧠 
 //Fuck you If you don't give credit 
 
