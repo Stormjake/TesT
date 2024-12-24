@@ -1,4 +1,4 @@
-//bot created By mxgamecoder
+//bot created By mcgamecoder
 //THE KING THEIF👑 
 //VORTEX-MD Brain 🧠 
 //Fuck you If you don't give credit 
